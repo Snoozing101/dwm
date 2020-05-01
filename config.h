@@ -182,7 +182,7 @@ static Key keys[] = {
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_v,		spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("") }, */
+	{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("{ killall picom || setsid picom & } ; xwallpaper --zoom ~/.config/wall.png") },
 	/* { MODKEY,			XK_b,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e nvim -c VimwikiIndex") },
